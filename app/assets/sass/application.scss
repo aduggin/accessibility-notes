@@ -1,0 +1,70 @@
+// Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
+// Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at in app/assets/sass/patterns/ to see which files are imported.
+@import 'patterns/check-your-answers';
+@import 'patterns/unbranded';
+
+// Related items
+// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+.govuk-related-items {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  .heading-medium {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em
+  }
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+}
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.box-highlight {
+  background: $govuk-blue;
+  padding: 20px 20px 100px 20px;
+
+  .box-highlight__title {
+    color: $white;
+    font-size: 36px;
+    font-weight: bold;
+    width: 66%;
+  }
+}
+
+.breadcrumbs {
+  border-bottom: 1px solid #bfc1c3;
+  padding-bottom: 0;
+}
+
+.summary {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #bfc1c3;
+}
+
+.section-list {
+  margin-top: -1px; // hack to have 1 px border below summary
+  h2 {
+    font-weight: bold;
+    border-top: 1px solid #bfc1c3;
+
+    padding-top: em(10, 16);
+  }
+}
+
+.section-list  p {
+  margin-top: em(0, 16);
+  margin-bottom: em(5, 16);
+}
+
+strong {
+  font-weight: bold;
+}
+

@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Solutions to problems that might be faced by people using your service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="phase-banner-alpha">
+        <p>
+            <strong class="phase-tag">ALPHA</strong>
+            <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+        </p>
+    </div>
+
+    <div class="box-highlight">
+        <div class="box-highlight__title">Accessibility: requirements, background and approach</div>
+    </div>
+
+    <div class="breadcrumbs">
+        <ol>
+            <li><a href="/prototype01/">Content</a></li>
+            <li>Solutions to problems that might be faced by people using your service</li>
+        </ol>
+    </div>
+
+    <div class="summary">
+        <div class="text">
+        <h1 class="heading-large">
+            Solutions to problems that might be faced by people using your service
+        </h1>
+
+        <p class="lede">
+            Some of the techniques that may be used to make your website more usable by a wider population
+        </p>
+        </div>
+    </div>
+
+    <div class="text">
+        <h2 class="heading-medium">Language and text</h2>
+
+        <h3 class="heading-small">Keep the content simple</h3>
+        <p>Avoid the use of jargon and complex words. This can be helpful users with cognitive impairments, and benefits all users.</p>
+
+        <h3 class="heading-small">Justified text</h3>
+        <p>Text shouldn’t be justified as users with dyslexia find this more difficult to read than if the text is left aligned.</p>
+
+        <h3 class="heading-small">Graphical text</h3>
+        <p>The use of images of text is undesirable for a number of reasons.</p>
+
+        <p>Users who have low vision may prefer different fonts or colour combinations, may need to increase the text using browser options, or use magnification software to enlarge the text beyond the maximum size the browser can offer.</p>
+
+        <p>Images of text cannot have their appearance altered by the user – they cannot be enlarged in most browsers, cannot have their colours altered to a higher contrast combination (e.g. white on black) and cannot have their font changed to one preferred by the user.</p>
+
+        <p>Unlike normal text, images of text become pixelated when enlarged by magnification software (particularly at higher levels), so users reliant upon this method of access can have significant difficulty in reading the information.</p>
+
+        <p>Images of text should be limited to logos and not used for items such as headings or navigation.</p>
+
+        <h3 class="heading-small">Ensure that text size can be changed</h3>
+        <p>Ensure that text sizes are not fixed and can be resized. Some people need to change the text size to make it more legible. Users with motor control difficulties may need to increase the text size to make it easier to select links.</p>
+
+
+        <h2 class="heading-medium">Links and Navigation</h2>
+
+        <h3 class="heading-small">Make a big clickable area</h3>
+        <p>Ensure that links and images are a decent size and not too close together. For example ensure that the ‘Go’ button on a ‘Search Form’ is a good size enabling users who have poor motor control to be able to select the button more easily.</p>
+
+        <h3 class="heading-small">Descriptive links</h3>
+        <p>Link text should give the user a clear idea of the destination and make sense when read out of context. Avoid the use of ‘click here’, for example. This is particularly important for screen reader users who may use a list of links to navigate the page.</p>
+
+        <h3 class="heading-small">Keyboard shortcuts</h3>
+        <p>Providing a ‘skip to content’ link enhances the accessibility for users accessing the website via the keyboard, particularly if they have to tab through a large number of navigational links to get to the main content.</p>
+
+        <h3 class="heading-small">Ensure that all functionality is available through the keyboard as well
+            as the mouse</h3>
+        <p>This can be checked by tabbing through links and forms using the keyboard to ensure they can be accessed – and in a sensible order. This is important because users with vision impairments will not have good hand-eye co- ordination and are more likely to interact with the website solely through the use of their keyboard.</p>
+
+
+        <h2 class="heading-medium">Images</h2>
+
+        <h3 class="heading-small">Images and icons</h3>
+        <p>Images and other media used to enhance textual content can often aid in the understanding of the information. </p>
+
+        <h3 class="heading-small">Alternative (alt) text</h3>
+        <p>Ensure that all meaningful images have meaningful alt text. This alt text is read out by the screen reader so that the user understands what is being shown on the screen. This is important for users with severe vision impairments.</p>
+
+        <p>One of the most common alt text mistakes is to use “Image (or picture or photo) of x”. A screen reader will tell the user that an image is present – they don’t need this information twice. Do not start alt text with “Image (or picture or photo) of...”</p>
+
+        <p>Use empty alt text if normal text already conveys the information provided by the image. For example, if you use a document thumbnail to illustrate a text link to a PDF, and the text link includes the title of the document, use empty alt text for the image (a pair of double quotes with no space between them). Using alt text that repeats the title of the document is pointless and distracting for users of screen readers.</p>
+
+        <p>Use empty alt text for any images that are purely decorative – for example the rounded corners of boxes.</p>
+
+
+        <h2 class="heading-medium">Colour</h2>
+
+        <h3 class="heading-small">Allow for flexibility</h3>
+        <p>Some dyslexic users find it more comfortable to read text on a beige background. Ensure that colours can be changed in the browser and that they have not been forced by the web developer. You could also consider offering a different stylesheet.</p>
+
+        <h3 class="heading-small">Do not rely on colour alone to convey information</h3>
+        <p>Blind users may not be able to get information about colour definitions from their screen reading software and using colour also presents difficulties for colour blind users.</p>
+
+        <p>You may find it useful to test web pages with VisCheck33 to simulate how they look to colour blind users.</p>
+
+        <h3 class="heading-small">Use good contrasting colours</h3>
+        <p>Consider using a tool such as Juicy Studio’s Colour Contrast Analyser34 or Fujitsu ColorSelector35 to help you measure colour contrast and determine the best combinations.</p>
+
+
+        <h2 class="heading-medium">Layout</h2>
+
+        <h3 class="heading-small">Consistent design</h3>
+        <p>This is achieved through the use of Cascading Style Sheets where the web developer can reuse the same layout and design for each page in the website. This can be helpful users with cognitive impairments, and benefits all users.</p>
+
+        <h3 class="heading-small">White space</h3>
+        <p>Good white space separating page elements makes it easier for users with cognitive difficulties to read web pages.</p>
+
+        <h2 class="heading-medium">Forms</h2>
+
+        <p>Associating labels with form fields is important for screen reader users so that they can identify which label describes each form field. For more information on creating accessible forms,37 please refer to WebAIM.</p>
+
+        <p>It is important to allow sufficient space in form fields to allow users to enter the correct information. For example, using the Typetalk service from the Royal National Institute for the Deaf (RNID), textphone users may wish to add the prefix 18002 for a voice telephone user to be able to contact them.</p>
+
+        <h2 class="heading-medium">CAPTCHAS</h2>
+
+        <p>CAPTCHAS (Completely Automated Public Turing test to tell Computers and Humans Apart) are used in forms to make sure that the entity filling out the form is a human being rather than a computer program that was written to submit the form many times. One type of CAPTCHA is to take a random string of characters, generate a distorted image of the text and require the user to type the letters in the image. This works because it is easier for a human being to solve than a computer.</p>
+
+        <p>However, tests relying solely on visual perception (e.g. an image of distorted text) present an accessibility barrier to some users, for example due to visual impairments. Therefore, forms with CAPTCHAs should provide an alternative audio version in addition to the visual test. For example, an audio file such as an MP3 is provided with the letters spoken by different speakers and with background speech. Again, the idea is that the test is easier for a human to pass than a computer.</p>
+
+        <h2 class="heading-medium">Tables</h2>
+
+        <h3 class="heading-small">Associate data cells with their headers for data tables</h3>
+        <p>Using table headers for data tables helps a screen reader user to associate the content of a data cell with the row or column it’s in. For more information on creating accessible tables,39 please refer to WebAIM.</p>
+
+        <h2 class="heading-medium">Audio and video content</h2>
+
+        <h3 class="heading-small">Captions and transcripts</h3>
+        <p>Audio and video content can be inaccessible to deaf and hard of hearing users. Providing a text equivalent is important for these users but also beneficial to others for example, users in a noisy environment.</p>
+
+        <h3 class="heading-small">Text equivalents for a movie</h3>
+        <p>Text equivalents should be provided for an entire movie in cases where the movie can be conveyed using a single text equivalent. Examples include movies that show a simple animation, banner adverts or complex multi- media that cannot otherwise be made accessible.</p>
+
+        <h3 class="heading-small">Provide accessible controls</h3>
+        <p>When providing audio or video on a web site, it is important to provide accessible controls to allow users (including keyboard and screen reader users) to interact with the video playback controls.</p>
+
+    </div>
+
+</main>
+
+{% endblock %}

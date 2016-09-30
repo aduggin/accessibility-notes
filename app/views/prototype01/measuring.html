@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+>Measuring accessibility
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="phase-banner-alpha">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+
+  <div class="box-highlight">
+    <div class="box-highlight__title">Accessibility: requirements, background and approach</div>
+  </div>
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="/prototype01/">Content</a></li>
+      <li>>Measuring accessibility</li>
+    </ol>
+  </div>
+
+  <div class="summary">
+    <h1 class="heading-large">
+      Measuring accessibility
+    </h1>
+
+    <div class="text">
+      <p class="lede">
+        The only way to find out if a website is accessible is to test it.
+      </p>
+    </div>
+  </div>
+
+  <div class="text">
+    <p></p>
+
+    <p>There are two elements to verify that a website is accessible: technical accessibility and usable accessibility. Technical accessibility determines whether the site will work with a range of assistive technologies. Usable accessibility determines whether the site will be usable by disabled people.</p>
+
+    <p>An accessibility test plan is an essential component of your website accessibility policy. When developing your accessibility test plan, you should consider using an appropriate mixture of tools and techniques. For example, you may wish to use expert reviews early on in the development cycle, user testing on later designs and automated testing at regular intervals thereafter. Please note that this approach may not be appropriate in specific cases. It merely serves to highlight that different methods for evaluating accessibility may be more or less appropriate at different stages of the development cycle.</p>
+
+    <p>Your accessibility test plan must include methods for testing both technical and usable accessibility.</p>
+
+    <h2 class="heading-medium">How to test for technical accessibility</h2>
+    <p>Approaches for determining technical accessibility include:</p>
+    <ul class="list list-bullet">
+      <li><strong>Automated testing</strong> to determine whether the website upholds some of the checkpoints of the W3C Web Content Accessibility Guidelines (WCAG);</li>
+      <li><strong>Validation testing</strong> of code to determine whether it upholds W3C guidelines and specifications – tools include validators for HTML and style sheets;</li>
+      <li><strong>Assistive technology tool</strong> testing to determine whether the website can be accessed using the tools commonly used by disabled users.</li>
+    </ul>
+
+    <h3 class="heading-small">Automated testing</h3>
+    <p>There are a number of free and commercially available automated testing tools that provide a way to measure conformance to some of the W3C guidelines. Website developers and testers should be aware of the capabilities and limitations of the tool being used. Although these tools check for a relatively small proportion of the W3C guidelines, they can be useful for analysing a whole site for technical accessibility.</p>
+
+    <h3 class="heading-small">Validation testing</h3>
+    <p>Validation testing should be undertaken by website developers to ensure that their mark-up conforms to W3C guidelines and specifications. The W3C Markup Validation Service19 should be used to validate HTML and the W3C CSS Validation Service20 should be used to evaluate the validity of any CSS. This is an important exercise as assistive technologies may rely on mark-up meeting these specifications.</p>
+
+    <h3 class="heading-small">Assistive technology tool testing</h3>
+    <p>Assistive technology tool testing is a way to check that the tools commonly used by disabled users can read and interact with the web content and controls can be activated. If a website conforms to the W3C guidelines, assistive technologies should work with the site. Assistive technology tool tests can provide a relatively quick way for a tester with specialist knowledge of the tools to assess the website’s technical accessibility.</p>
+
+    <h2 class="heading-medium">How to test for usable accessibility</h2>
+    <p>Approaches for determining usable accessibility include:</p>
+
+    <ul class="list list-bullet">
+      <li><strong>User testing</strong> to identify any usability and accessibility problems real-world users may have.</li>
+      <li><strong>Expert reviews</strong>, involving specialists in usability and accessibility, to evaluate the website in order to find potential problems;</li>
+      <li><strong>Conformance inspections</strong> to determine the Web Content Accessibility Guidelines (WCAG) conformance level for the website or check that it meets a specified WCAG conformance level;</li>
+    </ul>
+
+    <h3 class="heading-small">User testing</h3>
+    <p>User testing involves recruiting a set of representative users and asking them to attempt to use a website to achieve a set of representative tasks. User testing should include users from a range of disabilities and preferences, including a mix of beginners and experienced web users using a range of assistive technologies.</p>
+
+    <p>It is recommended that user testing is included in all website development projects as it provides the best evidence that a website will be usable by disabled people. The testing process used should conform to BS EN ISO 13407:1999, Human-centred design processes for interactive systems.</p>
+
+    <p>User testing relies on creating user profiles that describe the types of people who you want and believe should be able to use the website and then recruiting users who match these profiles.</p>
+
+    <h3 class="heading-small">Expert review</h3>
+    <p>There are different types of structured expert review methods, including:</p>
+
+    <ul class="list list-bullet">
+      <li>Heuristic evaluation, where an interface is inspected against a set of heuristics or guidelines, and;</li>
+      <li>Cognitive walk-though, where evaluators step through a series of actions with a goal of completing a typical user task.</li>
+    </ul>
+
+    <p>In all cases, experts can use assistive technology as part of the expert review process. However, specialist training is often required to make sure that the way the technologies are used closely matches the way they would be used by a disabled person.</p>
+
+    <p>Expert reviews can be conducted on early designs and finished code and are relatively quick and inexpensive to perform. They are useful for identifying quality and consistency issues not typically identified during user testing. However, they do not find the same type or number of problems as user testing and in some cases can identify problems that real users would not experience. It should also be noted that the quality of the findings is directly related to the skill and experience of the experts.</p>
+
+    <h3 class="heading-small">Conformance inspection</h3>
+    <p>A conformance inspection is a systematic manual review of each web page against the W3C guidelines as specified, which typically follows a validation test and involves reviewing each piece of content and control on a page. Conformance inspections provide a single method for determining whether a website upholds WCAG. However, they are time consuming and require an expert in accessibility, usability and website design.</p>
+
+    <p>Because of the amount of effort spent inspecting a page, a useful technique is to test a representative sample of the total web pages. This sample may be pages with high usage or involve critical functions such as form filling.</p>
+
+  </div>
+
+</main>
+
+{% endblock %}
